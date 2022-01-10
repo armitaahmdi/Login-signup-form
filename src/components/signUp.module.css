@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.formContainer{
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.formContainer h2{
+    text-align: left;
+    color: #1a73e8;
+    font-size: 1.8rem;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+}
+
+.formField label{
+    margin-bottom: 5px;
+    color: rgb(85, 85, 85);
+}
+
+.formField span{
+    margin-top: 5px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.175);
+    width: fit-content;
+    padding: 2px 3px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+}
+
+.formField:nth-child(6) label {
+    color: #1a73e8;
+}
+
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    appearance: none;
+    transition: all 0.2s ease-in;
+}
+
+input[type='checkbox']:checked {
+    width: 18px;
+    height: 18px;
+    background-color: #1a73e8;
+    border-radius: 50%;
+}
+
+input[type='checkbox']:hover{
+   outline: none;
+   border: 2px solid #004aaa;
+}
+
+.formInput{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid silver;
+    transition: all 0.2s ease-in;
+}
+
+.unCompleted{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid red;
+    transition: all 0.2s ease-in;
+}
+
+.formInput:focus ,
+.unCompleted:focus {
+    outline: none;
+    height: 30px;
+    border: 1px solid #1a73e8;
+}
+
+.formButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formButtons button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.formButtons button:hover{
+    background-color: #004aaa;
+}
+
+.formButtons a{
+    text-decoration: none;
+    color: #1a73e8;
+    transition: all 0.1s ease-in;
+}
+
+.formButtons a:hover{
+    color: #004aaa;
+}
+
+.checkboxContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+@media (max-width: 440px) {
+    .formContainer {
+        padding: 20px;
+        margin: 50px 20px;
+    }
+
+    .formContainer {
+        width: 90%;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+
+    .unCompleted {
+        width: 90%;
+    }
+}
+
